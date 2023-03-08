@@ -1,6 +1,6 @@
 ---
 title: "Afrobarometer Nigeria Survey 2022"
-author: "Emmanuel Maduneme<br><span style = 'font-size: 50%;'>University of Oregon<br>Fall 2022</span>"
+author: "Emmanuel Maduneme<br><span style = 'font-size: 50%;'>University of Oregon<br>Winter 2023</span>"
 date: "`r Sys.Date()`"
 output: 
     xaringan::moon_reader:
@@ -90,7 +90,7 @@ knitr::include_graphics(here( "final draft graphics", "Overall Trust in Institut
 ```
 ---
 
--   After learning after the plotting spatial data for different countries from week 8 class, I was able to create a similar plot for trust in the President by state. 
+-   After learning plotting spatial data for different countries from week 8 class, I was able to create a similar plot for trust in the President by state. 
 
 ```{r, echo=FALSE}
 knitr::include_graphics(here("final draft graphics", "trust_president.png"))
@@ -120,15 +120,14 @@ knitr::include_graphics(here( "final draft graphics", "Old issue plot.png"))
 
 knitr::include_graphics(here( "final draft graphics", "Plotly made issues.png"))
 
-
-
 ```
 
 ---
 ## Tentative Dashbaord 
 
-This is what my dashbaord is currently looking at but changes are still being implemented. 
-gif created using `magick` package. 
+This is what my dashbaord is currently looking lik but changes are still being implemented. 
+
+*gif created using `magick` package.* 
 
 ```{r, echo=FALSE, warning=FALSE}
 imgs <- list.files(here("dashboard_image"), full.names = TRUE)
