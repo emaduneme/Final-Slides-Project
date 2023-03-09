@@ -129,7 +129,7 @@ knitr::include_graphics(here( "final draft graphics", "Plotly made issues.png"))
 ---
 ## Tentative Dashbaord 
 
-This is what my dashbaord is currently looking lik but changes are still being implemented. 
+This is what my dashbaord is currently looking like but changes are still being implemented. 
 
 *gif created using `magick` package.* 
 
