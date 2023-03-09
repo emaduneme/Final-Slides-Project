@@ -61,13 +61,17 @@ style_duo_accent(
 
 # Synopsis
 
+-   Nigeria just concluded Presidential elections between February 25 and the next set of elections would be on the 18th of March, 2023.
 
--   Nigeria just concluded her general elections between February 25 and March 15 2023.
+-   The current Government just concluded it's second and final term and it becomes important to explore and visualize how Nigerians assessed a variety of issues about the outgoing government and the media.  
+-   The data is a 2022 survey from Afrobarometer, a renowned survey service based in Ghana that surveys African countries.  
 
--   The current Government just concluded it's second and final term.
 
-## Goal
--   I hope to explore how Nigerians assessed a variety of issues about the outgoing government and the media.     
+```{r, fig.show="hold", out.width="50%"}
+
+knitr::include_graphics(here( "final draft graphics", "afrobarometer.png"))
+```
+
 ---
 
 ## Journey
@@ -80,7 +84,7 @@ style_duo_accent(
 
 ---
 
-##  First Plot 
+##  First Plot: Trust by Institutions
 
 -  At first, I was having some issues with getting a map for Nigeria to plot how trust varied by different states.  
 - After wrangling the data, I used Tableau to try out a map. 
@@ -108,7 +112,7 @@ knitr::include_graphics(here("final draft graphics", "map_trust.png"))
 ```
 
 ---
-## Issue Perceptions
+## Second Plot: Issue Perceptions
 
 -     After wrangling the data, I created a simple bar plot but I realized `plot_ly` is a great way to make interactive graphs than `ggplotly`. 
 -   Perhaps, I am not great at using it. 
