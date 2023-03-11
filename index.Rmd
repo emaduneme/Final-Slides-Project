@@ -87,28 +87,28 @@ knitr::include_graphics(here( "final draft graphics", "afrobarometer.png"))
 ##  First Plot: Trust by Institutions
 
 -  At first, I was having some issues with getting a map for Nigeria to plot how trust varied by different states.  
-- After wrangling the data, I used Tableau to try out a map. 
-```{r, echo=FALSE, warning=FALSE}
-knitr::include_graphics(here( "final draft graphics", "Overall Trust in Institutions By State.png"))
 
-```
----
-
--   After learning plotting spatial data for different countries from week 8 class, I was able to create a similar plot for trust in the President by state. 
-
-```{r, echo=FALSE}
+```{r, echo=FALSE,  out.width = '80%'}
 knitr::include_graphics(here("final draft graphics", "trust_president.png"))
 
 ```
 ---
+-   After learning plotting spatial data for different countries using the `tmap` package and getting feedback on draft from peers and Dr Cengiz, I was able to create an interactive plot for trust in the President by state
+
+```{r, echo=FALSE,  out.width = '80%'}
+knitr::include_graphics(here("final draft graphics", "map presdient.png"))
+
+```
+
+---
 ## Challenges 
--   I am still having challenges labeling the states in a way that is not distracting.
--   I got peer feedback about the color palette and the legend.
--   I am still looking into implementing that in the final dashboard. 
+-   I  am still trying to fix and adjust the legend.
+-   I also need help fixing the labeling so that when highlighted, the correct state will show.  
+-   I am open to feedback on arranging the formatting of the dashboard too.
 
-```{r, out.width = '70%'}
+```{r, out.width = '80%'}
 
-knitr::include_graphics(here("final draft graphics", "map_trust.png"))
+knitr::include_graphics(here("final draft graphics", "map presdient.png"))
 ```
 
 ---
@@ -133,7 +133,7 @@ This is what my dashbaord is currently looking like but changes are still being 
 
 *gif created using `magick` package.* 
 
-```{r, echo=FALSE, warning=FALSE}
+```{r, echo=FALSE, warning=FALSE, out.width="80%"}
 imgs <- list.files(here("dashboard_image"), full.names = TRUE)
 img_list <- lapply(imgs, image_read)
 
